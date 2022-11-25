@@ -12,6 +12,7 @@ This archive contains:
 - The directory generated-tests with the JUnit/unittest test suites that were generated for Weka, scikit-learn and Spark MLlib. 
 - The directory descriptions with the YAML descriptions of the algorithm that we use to automatically generate the tests. 
 - A copy of atoml, the tool we used to automatically generate the tests. 
+- A copy of the test execution times and the Jupyter notebook required to create the plot. 
 
 # How does it work
 To replicate the test generation, you require the tool [atoml](https://github.com/sherbold/atoml), a copy is provided as Zip archive. The Project contains a gradle file that contains all required Java dependencies, including for the execution of the JUnit tests for Weka and Spark MLlib. You can build atoml in a Linux bash and generate the tests with the following commands.
@@ -26,6 +27,7 @@ cd ..
 ```
 
 The tests generated tests can be executed using JUnit, resp unittest. For The JUnit test, make sure that Weka (and the plug-ins for classifiers), resp. Spark and Spark ML are part of the classpath for the test execution. For scikit-learn, make sure that the latest version of scikit-learn and numpy are available. 
+
 
 # License
 
